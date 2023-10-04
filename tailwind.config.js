@@ -24,6 +24,7 @@ export default {
     extend: {
       backgroundImage: {
         'wave-pattern': "url('./assets/images/wave.svg')",
+        'wave-b-pattern': "url('./assets/images/wave-b.svg')",
       }
     },
   },

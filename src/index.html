@@ -8,7 +8,7 @@
   </head>
   <body class="bg-stone-100">
     <!-- HEADER -->
-    <header class="fixed z-10 w-full border-b-2 border-light-grey bg-white">
+    <header class="fixed z-50 w-full border-b-2 border-light-grey bg-white">
       <div
         class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4"
       >
@@ -82,6 +82,7 @@
     <div
       class="bg-wave-pattern relative top-1 h-20 w-full bg-bottom bg-repeat-x"
     ></div>
+
     <section id="service" class="bg-light-grey pt-12">
       <div class="mx-auto max-w-5xl px-4">
         <h2 class="mb-1 text-orange">
@@ -115,7 +116,8 @@
             <div>
               <h3 class="mb-2 text-orange">Fresh ingredients</h3>
               <p class="text-light-brown">
-                We bake our products twice a day so you always have fresh donuts.
+                We bake our products twice a day so you always have fresh
+                donuts.
               </p>
             </div>
           </div>
@@ -140,11 +142,11 @@
     </section>
     <!-- /SERVICE -->
 
-    <!-- HALLOWEEN -->
-    <section id="service" class="bg-light-grey pt-16">
+    <!-- EVENTS -->
+    <section id="events" class="bg-light-grey pt-16 z-10 relative">
       <div class="mx-auto max-w-5xl px-4">
         <div
-          class="relative overflow-hidden rounded-2xl bg-orange p-4 text-center"
+          class="relative -bottom-20 -mt-20 overflow-hidden rounded-2xl bg-orange p-4 text-center"
         >
           <h2 class="mx-auto my-4 max-w-xs text-white">
             Enjoy a sweet halloween
@@ -164,7 +166,71 @@
         </div>
       </div>
     </section>
-    <!-- /HALLOWEEN -->
+
+    <div
+      class="bg-wave-b-pattern relative -top-1 h-20 w-full bg-top bg-repeat-x z-0"
+    ></div>
+    <!-- /EVENTS -->
+
+    <!-- NEWS -->
+    <section id="news" class="pt-16">
+      <div class="mx-auto max-w-5xl px-4">
+        <h2 class="text-orange">The king's news</h2>
+
+        <div class="mt-4 rounded-2xl border-2 border-brown-15 p-4">
+          <img
+            src="./assets/images/news-becentral.jpg"
+            alt="The beCentral building"
+            class="w-full rounded-md"
+          />
+          <div>
+            <div class="px-4 py-1 border-2 border-white relative -top-4 -mb-8 rounded-full bg-turquoise text-white uppercase text-sm inline-block">Shop</div>
+            <p class="mb-2 text-light-brown">Oct. 2nd 2023</h3>
+            <p class="text-brown">
+              The king is opening a new shop in the technology hub beCentral.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-4 rounded-2xl border-2 border-brown-15 p-4">
+          <img
+            src="./assets/images/news-lion.jpg"
+            alt="The beCentral building"
+            class="w-full rounded-md"
+          />
+          <div>
+            <div class="px-4 py-1 border-2 border-white relative -top-4 -mb-8 rounded-full bg-pink text-white uppercase text-sm inline-block">Product</div>
+            <p class="mb-2 text-light-brown">Sept. 22nd 2023</h3>
+            <p class="text-brown">
+              A new angry donut drops for all hungry animals!
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-4 rounded-2xl border-2 border-brown-15 p-4">
+          <img
+            src="./assets/images/news-donut-day.jpg"
+            alt="The beCentral building"
+            class="w-full rounded-md"
+          />
+          <div>
+            <div class="px-4 py-1 border-2 border-white relative -top-4 -mb-8 rounded-full bg-orange text-white uppercase text-sm inline-block">Promo</div>
+            <p class="mb-2 text-light-brown">Sept. 13th 2023</h3>
+            <p class="text-brown">
+              Tomorrow is Donut's Day!! Come get your free donut in any King Donut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /NEWS -->
+
+    <!-- FOOTER -->
+    <footer class="p-16 flex flex-col items-center text-center">
+      <img src="./assets/images/logo-s.svg" alt="King Donuts Logo" class="w-12 mb-4"/>
+      <small class="text-light-brown text-sm">Copyright © 2023 King Donuts</small>
+    </footer>
+    <!-- /FOOTER -->
 
     <script type="module" src="/main.js"></script>
   </body>
