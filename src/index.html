@@ -2,11 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant</title>
+    <title>King Donuts – Homepage</title>
   </head>
-  <body class="bg-indigo-500">
+  <body class="bg-stone-100">
+    <!-- HEADER -->
+    <header
+      class="fixed z-10 flex w-full justify-between border-b-2 border-light-grey bg-white px-6 py-4 align-middle"
+    >
+      <a href="./index.html" class="block w-24">
+        <img src="./assets/logo.svg" alt="Donuts Lord logo" />
+      </a>
+      <button type="button" name="menu">
+        <img src="./assets/icons/menu-icon.svg" aria-hidden="true" />
+        <span class="hidden">Open menu</span>
+      </button>
+      <nav class="hidden">
+        <ul>
+          <li><a href="/menu" class="px-2 py-1">Menu</a></li>
+          <li><a href="/gallery" class="px-2 py-1">Gallery</a></li>
+          <li><a href="/about" class="px-2 py-1">About</a></li>
+          <li><a href="/contact" class="px-2 py-1">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- HERO -->
+    <section id="hero" class="grid gap-4 px-4 pt-24">
+      <div class="relative overflow-hidden rounded-2xl bg-orange p-4">
+        <h1 class="mb-44 text-white">
+          Belgium’s <br />
+          roundest <br />
+          donuts
+        </h1>
+        <p class="text-white-80">Simply the best.</p>
+        <img
+          src="./assets/images/hero-image.png"
+          alt="Three tasty looking donuts"
+          class="absolute bottom-0 right-0 w-72 translate-x-8 transform"
+        />
+      </div>
+
+      <div class="relative overflow-hidden rounded-2xl bg-pink p-4">
+        <h2 class="mb-1 text-white">Menu</h2>
+        <p class="mb-10 text-white-80">Check out our delicious treats</p>
+        <div class="z-10 flex flex-wrap gap-2">
+          <a href="/contact" class="btn primary">Take a looook</a>
+        </div>
+        <img
+          src="./assets/images/swirl.svg"
+          alt=""
+          aria-hidden="true"
+          class="absolute left-1/2 top-1/2 z-0 w-full -translate-x-1/2 -translate-y-1/2 transform opacity-60"
+        />
+      </div>
+
+      <div class="relative overflow-hidden rounded-2xl bg-turquoise p-4">
+        <h2 class="mb-1 text-white">About us</h2>
+        <p class="mb-10 text-white-80">Get to know us better</p>
+        <div class="flex flex-wrap gap-2">
+          <a href="/contact" class="btn secondary">Contact us</a>
+          <a href="/about" class="btn secondary">The restaurant</a>
+        </div>
+        <img
+          src="./assets/images/crowns.png"
+          alt=""
+          aria-hidden="true"
+          class="absolute right-0 top-5 w-36 translate-x-9 transform"
+        />
+      </div>
+    </section>
+    <!-- /HERO -->
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
