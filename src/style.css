@@ -26,6 +26,12 @@
   h2 {
     @apply text-3xl font-cursive uppercase;
   }
+  h3 {
+    @apply text-xl font-cursive uppercase;
+  }
+  p{
+    @apply text-lg leading-6;
+  }
   .btn {
     @apply inline-block uppercase px-8 py-3 rounded-full;
   }

@@ -8,29 +8,31 @@
   </head>
   <body class="bg-stone-100">
     <!-- HEADER -->
-    <header
-      class="fixed z-10 flex w-full justify-between border-b-2 border-light-grey bg-white px-6 py-4 align-middle"
-    >
-      <a href="./index.html" class="block w-24">
-        <img src="./assets/logo.svg" alt="Donuts Lord logo" />
-      </a>
-      <button type="button" name="menu">
-        <img src="./assets/icons/menu-icon.svg" aria-hidden="true" />
-        <span class="hidden">Open menu</span>
-      </button>
-      <nav class="hidden">
-        <ul>
-          <li><a href="/menu" class="px-2 py-1">Menu</a></li>
-          <li><a href="/gallery" class="px-2 py-1">Gallery</a></li>
-          <li><a href="/about" class="px-2 py-1">About</a></li>
-          <li><a href="/contact" class="px-2 py-1">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="fixed z-10 w-full border-b-2 border-light-grey bg-white">
+      <div
+        class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4"
+      >
+        <a href="./index.html" class="block w-24">
+          <img src="./assets/logo.svg" alt="Donuts Lord logo" />
+        </a>
+        <button type="button" name="menu">
+          <img src="./assets/icons/menu-icon.svg" aria-hidden="true" />
+          <span class="hidden">Open menu</span>
+        </button>
+        <nav class="hidden">
+          <ul>
+            <li><a href="/menu" class="px-2 py-1">Menu</a></li>
+            <li><a href="/gallery" class="px-2 py-1">Gallery</a></li>
+            <li><a href="/about" class="px-2 py-1">About</a></li>
+            <li><a href="/contact" class="px-2 py-1">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- /HEADER -->
 
     <!-- HERO -->
-    <section id="hero" class="grid gap-4 px-4 pt-24">
+    <section id="hero" class="mx-auto grid max-w-5xl gap-4 px-4 pt-28">
       <div class="relative overflow-hidden rounded-2xl bg-orange p-4">
         <h1 class="mb-44 text-white">
           Belgium’s <br />
@@ -75,6 +77,94 @@
       </div>
     </section>
     <!-- /HERO -->
+
+    <!-- SERVICE -->
+    <div
+      class="bg-wave-pattern relative top-1 h-20 w-full bg-bottom bg-repeat-x"
+    ></div>
+    <section id="service" class="bg-light-grey pt-12">
+      <div class="mx-auto max-w-5xl px-4">
+        <h2 class="mb-1 text-orange">
+          Good service, <br />
+          good donuts.
+        </h2>
+
+        <div>
+          <div class="mt-4 flex items-center gap-4 rounded-2xl bg-white p-4">
+            <img
+              src="./assets/icons/thumb-up.svg"
+              alt=""
+              aria-hidden="true"
+              class="w-14 rounded-full bg-pink p-4"
+            />
+            <div>
+              <h3 class="mb-2 text-orange">100% Belgian</h3>
+              <p class="text-light-brown">
+                All of our donuts are sourced and cooked in belgium.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-4 flex items-center gap-4 rounded-2xl bg-white p-4">
+            <img
+              src="./assets/icons/heart.svg"
+              alt=""
+              aria-hidden="true"
+              class="w-14 rounded-full bg-pink p-4"
+            />
+            <div>
+              <h3 class="mb-2 text-orange">Fresh ingredients</h3>
+              <p class="text-light-brown">
+                We bake our products twice a day so you always have fresh donuts.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-4 flex items-center gap-4 rounded-2xl bg-white p-4">
+            <img
+              src="./assets/icons/clock.svg"
+              alt=""
+              aria-hidden="true"
+              class="w-14 rounded-full bg-pink p-4"
+            />
+            <div>
+              <h3 class="mb-2 text-orange">Fast delivery</h3>
+              <p class="text-light-brown">
+                Thanks to our 400+ shops in Belgium, we are never more than 20
+                min. from you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /SERVICE -->
+
+    <!-- HALLOWEEN -->
+    <section id="service" class="bg-light-grey pt-16">
+      <div class="mx-auto max-w-5xl px-4">
+        <div
+          class="relative overflow-hidden rounded-2xl bg-orange p-4 text-center"
+        >
+          <h2 class="mx-auto my-4 max-w-xs text-white">
+            Enjoy a sweet halloween
+          </h2>
+          <p class="mx-auto max-w-xs text-white-80">
+            Get special halloween-themed donuts from Oct. 20th to Nov. 10th
+          </p>
+
+          <div class="mx-auto max-w-lg rounded-xl">
+            <img
+              src="./assets/images/halloween.png"
+              alt=""
+              aria-hidden="true"
+              class="relative -bottom-20 -mt-10"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /HALLOWEEN -->
 
     <script type="module" src="/main.js"></script>
   </body>
