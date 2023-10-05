@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King Donuts – Homepage</title>
+  </head>
+  <body class="bg-stone-100">
+    <!-- HEADER -->
+    <header
+      class="fixed z-50 h-20 w-full border-b-2 border-light-grey bg-white"
+    >
+      <div class="mx-auto flex max-w-5xl items-center justify-center px-6 py-4">
+        <a href="./" class="relative -top-2 block w-24">
+          <img src="./assets/logo.svg" alt="Donuts Lord logo" />
+        </a>
+        <nav class="absolute -bottom-4 w-full">
+          <ul class="flex justify-center gap-2">
+            <li>
+              <a
+                href="./menu.html"
+                class="inline-block rounded-full border-2 border-light-grey bg-white px-3 py-1 text-sm uppercase text-brown"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="inline-block rounded-full border-2 border-light-grey bg-white px-3 py-1 text-sm uppercase text-brown"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="inline-block rounded-full border-2 border-light-grey bg-white px-3 py-1 text-sm uppercase text-brown"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- HERO -->
+    <section class="relative z-10 pt-32 md:pt-40">
+      <div class="mx-auto max-w-5xl px-4">
+        <div
+          class="relative -bottom-20 -mt-20 overflow-hidden rounded-2xl bg-turquoise p-4 sm:flex"
+        >
+          <div class="text-center mx-auto py-4 max-w-xs sm:text-left sm:pr-12 sm:flex sm:flex-col sm:justify-between sm:py-0">
+            <h1 class="text-white mb-2">
+              Discover our sweeeet menu
+            </h1>
+            <p class="text-white-80">
+              Carefull not to drown in all that sugar
+            </p>
+          </div>
+          
+          <div class="w-full relative overflow-hidden rounded-md sm:hidden" aria-hidden="true">
+            <div class="absolute h-[70%] bottom-0 z-0 w-full bg-white rounded-md"></div>
+            <img
+              src="./assets/images/donut-menu-mobile.png"
+              alt=""
+              aria-hidden="true"
+              class="w-full bottom-0 relative z-10 animate-float"
+            />
+          </div>
+
+          <div class="w-full relative overflow-hidden rounded-md hidden sm:block" aria-hidden="true">
+            <div class="absolute w-[75%] right-0 z-0 h-full bg-white rounded-md"></div>
+            <img
+              src="./assets/images/donut-menu-desktop.png"
+              alt=""
+              aria-hidden="true"
+              class="h-[110%] -top-[5%] bottom-0 relative z-10 animate-float"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /HERO -->
+
+    <!-- MENU -->
+    <div
+      class="bg-wave-pattern relative top-1 h-4 w-full bg-bottom bg-repeat-x"
+    ></div>
+
+    <section class="relative bg-light-grey pt-32 pb-20 md:pt-40">
+      <div class="mx-auto max-w-5xl px-4">
+        
+        <!-- PAGE 1 -->
+        <div id="page-1" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-2xl bg-white p-4 flex flex-col justify-between">
+            <img
+              src="./assets/images/products/original-glazed.png"
+              alt="Original Glazed"
+              class="w-full rounded-md"
+            />
+            <div>
+              <span class="inline-block relative rounded-full bg-pink px-2 p-0.5 text-xs uppercase text-white mb-3">
+                Best seller
+              </span>
+              <h3 class="text-brown mb-2">Original Glazed</h3>
+              <p class="text-light-brown">Our signature Original Glazed ring doughnut</p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-2xl text-orange mr-2">2.50<span class="text-base ml-0.5 opacity-80">€</span></span>
+                <div class="text-sm border-2 border-brown-15 text-light-brown px-2 py-0.5 rounded-full inline-flex gap-1 items-center">
+                  +15
+                  <img src="./assets/images/logo-s.svg" alt="Loyalty point" class="inline-block h-4">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-white p-4 flex flex-col justify-between">
+            <img
+              src="./assets/images/products/chocolate-sprinkle.png"
+              alt="Chocolate Sprinkle"
+              class="w-full rounded-md"
+            />
+            <div>
+              <span class="inline-block relative rounded-full bg-pink px-2 p-0.5 text-xs uppercase text-white mb-3">
+                Best seller
+              </span>
+              <h3 class="text-brown mb-2">Chocolate Sprinkle</h3>
+              <p class="text-light-brown">Our chocolatey hand-dipped doughnut</p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-2xl text-orange mr-2">2.75<span class="text-base ml-0.5 opacity-80">€</span></span>
+                <div class="text-sm border-2 border-brown-15 text-light-brown px-2 py-0.5 rounded-full inline-flex gap-1 items-center">
+                  +15
+                  <img src="./assets/images/logo-s.svg" alt="Loyalty point" class="inline-block h-4">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-white p-4 flex flex-col justify-between">
+            <img
+              src="./assets/images/products/original-filled-creme.png"
+              alt="Original Filled Creme"
+              class="w-full rounded-md"
+            />
+            <div>
+              <h3 class="text-brown mb-2">Original Filled Creme</h3>
+              <p class="text-light-brown">Our classic doughnut with a smooth creme filling</p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-2xl text-orange mr-2">3.00<span class="text-base ml-0.5 opacity-80">€</span></span>
+                <div class="text-sm border-2 border-brown-15 text-light-brown px-2 py-0.5 rounded-full inline-flex gap-1 items-center">
+                  +20
+                  <img src="./assets/images/logo-s.svg" alt="Loyalty point" class="inline-block h-4">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-white p-4 flex flex-col justify-between">
+            <img
+              src="./assets/images/products/strawberry-iced-ring.png"
+              alt="Strawberry Iced Ring"
+              class="w-full rounded-md"
+            />
+            <div>
+              <h3 class="text-brown mb-2">Strawberry Iced Ring</h3>
+              <p class="text-light-brown">Original Glazed doughnut dipped in Strawberry icing</p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-2xl text-orange mr-2">2.75<span class="text-base ml-0.5 opacity-80">€</span></span>
+                <div class="text-sm border-2 border-brown-15 text-light-brown px-2 py-0.5 rounded-full inline-flex gap-1 items-center">
+                  +15
+                  <img src="./assets/images/logo-s.svg" alt="Loyalty point" class="inline-block h-4">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-white p-4 flex flex-col justify-between">
+            <img
+              src="./assets/images/products/caramel-iced-ring.png"
+              alt="Caramel Iced Ring"
+              class="w-full rounded-md"
+            />
+            <div>
+              <h3 class="text-brown mb-2">Caramel Iced Ring</h3>
+              <p class="text-light-brown">Original Glazed doughnut dipped in Caramel icing</p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-2xl text-orange mr-2">2.75<span class="text-base ml-0.5 opacity-80">€</span></span>
+                <div class="text-sm border-2 border-brown-15 text-light-brown px-2 py-0.5 rounded-full inline-flex gap-1 items-center">
+                  +15
+                  <img src="./assets/images/logo-s.svg" alt="Loyalty point" class="inline-block h-4">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-white p-4 flex flex-col justify-between">
+            <img
+              src="./assets/images/products/glazed-raspberry.png"
+              alt="Glazed Raspberry"
+              class="w-full rounded-md"
+            />
+            <div>
+              <h3 class="text-brown mb-2">Glazed Raspberry</h3>
+              <p class="text-light-brown">Fruity raspberry filling and signature glaze</p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-2xl text-orange mr-2">3.25<span class="text-base ml-0.5 opacity-80">€</span></span>
+                <div class="text-sm border-2 border-brown-15 text-light-brown px-2 py-0.5 rounded-full inline-flex gap-1 items-center">
+                  +25
+                  <img src="./assets/images/logo-s.svg" alt="Loyalty point" class="inline-block h-4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /PAGE 1 -->
+      </div>
+    </section>
+    
+    <div
+      class="bg-wave-b-pattern relative -top-1 z-0 h-4 w-full bg-top bg-repeat-x"
+    ></div>
+    <!-- /MENU -->
+
+    <!-- FOOTER -->
+    <footer class="flex flex-col items-center p-16 text-center">
+      <img
+        src="./assets/images/logo-s.svg"
+        alt="King Donuts Logo"
+        class="mb-4 w-12"
+      />
+      <small class="text-sm text-light-brown"
+        >Copyright © 2023 King Donuts</small
+      >
+    </footer>
+    <!-- /FOOTER -->
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

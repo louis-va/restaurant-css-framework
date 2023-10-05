@@ -25,6 +25,15 @@ export default {
       backgroundImage: {
         'wave-pattern': "url('./assets/images/wave.svg')",
         'wave-b-pattern': "url('./assets/images/wave-b.svg')",
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translatey(0px)' },
+          '50%': { transform: 'translatey(10px)' },
+        }
+      },
+      animation: {
+        float: 'float 5s ease-in-out infinite',
       }
     },
   },
