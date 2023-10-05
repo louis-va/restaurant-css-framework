@@ -8,23 +8,18 @@
   </head>
   <body class="bg-stone-100">
     <!-- HEADER -->
-    <header class="fixed z-50 w-full border-b-2 border-light-grey bg-white">
+    <header class="fixed z-50 w-full h-20 border-b-2 border-light-grey bg-white">
       <div
-        class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4"
+        class="mx-auto flex max-w-5xl items-center justify-center px-6 py-4"
       >
-        <a href="./index.html" class="block w-24">
+        <a href="./index.html" class="block w-24 relative -top-2">
           <img src="./assets/logo.svg" alt="Donuts Lord logo" />
         </a>
-        <button type="button" name="menu">
-          <img src="./assets/icons/menu-icon.svg" aria-hidden="true" />
-          <span class="hidden">Open menu</span>
-        </button>
-        <nav class="hidden">
-          <ul>
-            <li><a href="/menu" class="px-2 py-1">Menu</a></li>
-            <li><a href="/gallery" class="px-2 py-1">Gallery</a></li>
-            <li><a href="/about" class="px-2 py-1">About</a></li>
-            <li><a href="/contact" class="px-2 py-1">Contact</a></li>
+        <nav class="absolute w-full -bottom-4">
+          <ul class="justify-center flex gap-2">
+            <li><a href="/menu" class="px-3 py-1 bg-white border-2 border-light-grey rounded-full inline-block uppercase text-sm">Menu</a></li>
+            <li><a href="/about" class="px-3 py-1 bg-white border-2 border-light-grey rounded-full inline-block uppercase text-sm">About</a></li>
+            <li><a href="/contact" class="px-3 py-1 bg-white border-2 border-light-grey rounded-full inline-block uppercase text-sm">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -32,8 +27,8 @@
     <!-- /HEADER -->
 
     <!-- HERO -->
-    <section id="hero" class="mx-auto grid max-w-5xl gap-4 px-4 pt-28">
-      <div class="relative overflow-hidden rounded-2xl bg-orange p-4">
+    <section id="hero" class="mx-auto grid max-w-5xl gap-4 px-4 pt-28 md:grid-cols-2 md:pt-36">
+      <div class="relative flex flex-col justify-between overflow-hidden rounded-2xl bg-orange p-4 md:row-span-2">
         <h1 class="mb-44 text-white">
           Belgium’s <br />
           roundest <br />
@@ -43,7 +38,7 @@
         <img
           src="./assets/images/hero-image.png"
           alt="Three tasty looking donuts"
-          class="absolute bottom-0 right-0 w-72 translate-x-8 transform"
+          class="absolute bottom-0 right-0 w-72 translate-x-8 transform sm:w-96"
         />
       </div>
 
@@ -64,15 +59,13 @@
       <div class="relative overflow-hidden rounded-2xl bg-turquoise p-4">
         <h2 class="mb-1 text-white">About us</h2>
         <p class="mb-10 text-white-80">Get to know us better</p>
-        <div class="flex flex-wrap gap-2">
-          <a href="/contact" class="btn secondary">Contact us</a>
-          <a href="/about" class="btn secondary">The restaurant</a>
-        </div>
+        <div><a href="/contact" class="btn secondary">Contact us</a></div>
+        <div class="mt-2"><a href="/about" class="btn secondary">The restaurant</a></div>
         <img
           src="./assets/images/crowns.png"
           alt=""
           aria-hidden="true"
-          class="absolute right-0 top-5 w-36 translate-x-9 transform"
+          class="absolute right-0 top-16 w-36 transform"
         />
       </div>
     </section>
@@ -80,18 +73,18 @@
 
     <!-- SERVICE -->
     <div
-      class="bg-wave-pattern relative top-1 h-20 w-full bg-bottom bg-repeat-x"
+      class="bg-wave-pattern relative top-1 h-20 w-full bg-bottom bg-repeat-x md:h-28"
     ></div>
 
-    <section id="service" class="bg-light-grey pt-12">
+    <section id="service" class="bg-light-grey pt-12 md:pt-20">
       <div class="mx-auto max-w-5xl px-4">
         <h2 class="mb-1 text-orange">
           Good service, <br />
           good donuts.
         </h2>
 
-        <div>
-          <div class="mt-4 flex items-center gap-4 rounded-2xl bg-white p-4">
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="flex items-center gap-4 rounded-2xl bg-white p-4">
             <img
               src="./assets/icons/thumb-up.svg"
               alt=""
@@ -106,7 +99,7 @@
             </div>
           </div>
 
-          <div class="mt-4 flex items-center gap-4 rounded-2xl bg-white p-4">
+          <div class="flex items-center gap-4 rounded-2xl bg-white p-4">
             <img
               src="./assets/icons/heart.svg"
               alt=""
@@ -122,7 +115,7 @@
             </div>
           </div>
 
-          <div class="mt-4 flex items-center gap-4 rounded-2xl bg-white p-4">
+          <div class="flex items-center gap-4 rounded-2xl bg-white p-4">
             <img
               src="./assets/icons/clock.svg"
               alt=""
@@ -133,7 +126,22 @@
               <h3 class="mb-2 text-orange">Fast delivery</h3>
               <p class="text-light-brown">
                 Thanks to our 400+ shops in Belgium, we are never more than 20
-                min. from you.
+                minutes from you.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 rounded-2xl bg-white p-4">
+            <img
+              src="./assets/icons/medal.svg"
+              alt=""
+              aria-hidden="true"
+              class="w-14 rounded-full bg-pink p-4"
+            />
+            <div>
+              <h3 class="mb-2 text-orange">Number 1</h3>
+              <p class="text-light-brown">
+                King Donut is the most popular donut restaurant in the world!
               </p>
             </div>
           </div>
@@ -143,7 +151,7 @@
     <!-- /SERVICE -->
 
     <!-- EVENTS -->
-    <section id="events" class="bg-light-grey pt-16 z-10 relative">
+    <section id="events" class="relative z-10 bg-light-grey pt-16 md:pt-24">
       <div class="mx-auto max-w-5xl px-4">
         <div
           class="relative -bottom-20 -mt-20 overflow-hidden rounded-2xl bg-orange p-4 text-center"
@@ -168,57 +176,72 @@
     </section>
 
     <div
-      class="bg-wave-b-pattern relative -top-1 h-20 w-full bg-top bg-repeat-x z-0"
+      class="bg-wave-b-pattern relative -top-1 z-0 h-20 w-full bg-top bg-repeat-x"
     ></div>
     <!-- /EVENTS -->
 
     <!-- NEWS -->
-    <section id="news" class="pt-16">
+    <section id="news" class="pt-16 md:pt-24">
       <div class="mx-auto max-w-5xl px-4">
         <h2 class="text-orange">The king's news</h2>
 
-        <div class="mt-4 rounded-2xl border-2 border-brown-15 p-4">
-          <img
-            src="./assets/images/news-becentral.jpg"
-            alt="The beCentral building"
-            class="w-full rounded-md"
-          />
-          <div>
-            <div class="px-4 py-1 border-2 border-white relative -top-4 -mb-8 rounded-full bg-turquoise text-white uppercase text-sm inline-block">Shop</div>
-            <p class="mb-2 text-light-brown">Oct. 2nd 2023</h3>
-            <p class="text-brown">
-              The king is opening a new shop in the technology hub beCentral.
-            </p>
+        <div class="grid gap-4 mt-6 sm:grid-cols-2 md:grid-cols-3">
+          <div class="rounded-2xl border-2 border-brown-15 p-4 sm:col-span-2 md:col-span-1">
+            <img
+              src="./assets/images/news-becentral.jpg"
+              alt="The beCentral building"
+              class="w-full rounded-md"
+            />
+            <div>
+              <div
+                class="relative -top-4 -mb-8 inline-block rounded-full border-2 border-white bg-turquoise px-4 py-1 text-sm uppercase text-white"
+              >
+                Shop
+              </div>
+              <p class="mb-2 text-light-brown">Oct. 2nd 2023</p>
+              <p class="text-brown">
+                The king is opening a new shop in the technology hub beCentral.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="mt-4 rounded-2xl border-2 border-brown-15 p-4">
-          <img
-            src="./assets/images/news-lion.jpg"
-            alt="The beCentral building"
-            class="w-full rounded-md"
-          />
-          <div>
-            <div class="px-4 py-1 border-2 border-white relative -top-4 -mb-8 rounded-full bg-pink text-white uppercase text-sm inline-block">Product</div>
-            <p class="mb-2 text-light-brown">Sept. 22nd 2023</h3>
-            <p class="text-brown">
-              A new angry donut drops for all hungry animals!
-            </p>
+          <div class="rounded-2xl border-2 border-brown-15 p-4">
+            <img
+              src="./assets/images/news-lion.jpg"
+              alt="The beCentral building"
+              class="w-full rounded-md"
+            />
+            <div>
+              <div
+                class="relative -top-4 -mb-8 inline-block rounded-full border-2 border-white bg-pink px-4 py-1 text-sm uppercase text-white"
+              >
+                Product
+              </div>
+              <p class="mb-2 text-light-brown">Sept. 22nd 2023</p>
+              <p class="text-brown">
+                A new angry donut drops for all hungry animals!
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="mt-4 rounded-2xl border-2 border-brown-15 p-4">
-          <img
-            src="./assets/images/news-donut-day.jpg"
-            alt="The beCentral building"
-            class="w-full rounded-md"
-          />
-          <div>
-            <div class="px-4 py-1 border-2 border-white relative -top-4 -mb-8 rounded-full bg-orange text-white uppercase text-sm inline-block">Promo</div>
-            <p class="mb-2 text-light-brown">Sept. 13th 2023</h3>
-            <p class="text-brown">
-              Tomorrow is Donut's Day!! Come get your free donut in any King Donut.
-            </p>
+          <div class="rounded-2xl border-2 border-brown-15 p-4">
+            <img
+              src="./assets/images/news-donut-day.jpg"
+              alt="The beCentral building"
+              class="w-full rounded-md"
+            />
+            <div>
+              <div
+                class="relative -top-4 -mb-8 inline-block rounded-full border-2 border-white bg-orange px-4 py-1 text-sm uppercase text-white"
+              >
+                Promo
+              </div>
+              <p class="mb-2 text-light-brown">Sept. 13th 2023</p>
+              <p class="text-brown">
+                Tomorrow is Donut's Day!! Come get your free donut in any King
+                Donut.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -226,9 +249,15 @@
     <!-- /NEWS -->
 
     <!-- FOOTER -->
-    <footer class="p-16 flex flex-col items-center text-center">
-      <img src="./assets/images/logo-s.svg" alt="King Donuts Logo" class="w-12 mb-4"/>
-      <small class="text-light-brown text-sm">Copyright © 2023 King Donuts</small>
+    <footer class="flex flex-col items-center p-16 text-center">
+      <img
+        src="./assets/images/logo-s.svg"
+        alt="King Donuts Logo"
+        class="mb-4 w-12"
+      />
+      <small class="text-sm text-light-brown"
+        >Copyright © 2023 King Donuts</small
+      >
     </footer>
     <!-- /FOOTER -->
 
