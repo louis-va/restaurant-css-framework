@@ -34,6 +34,7 @@ export default {
       },
       animation: {
         float: 'float 5s ease-in-out infinite',
+        spin: 'spin 5s linear infinite',
       }
     },
   },
