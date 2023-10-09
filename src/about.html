@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King Donuts – Homepage</title>
+  </head>
+  <body id="about" class="bg-stone-100">
+    <!-- HEADER -->
+    <header
+      class="fixed z-50 h-16 w-full border-b-2 border-light-grey bg-white"
+    >
+      <div
+        class="mx-auto flex h-full max-w-5xl items-center justify-between px-6"
+      >
+        <a href="./" class="block w-20 sm:w-24">
+          <img src="./assets/logo.svg" alt="Donuts Lord logo" />
+        </a>
+        <nav
+          id="nav"
+          class="absolute left-0 top-16 hidden h-72 w-full bg-white sm:relative sm:top-0 sm:block sm:h-auto sm:w-auto"
+        >
+          <ul
+            class="flex h-full flex-col items-center justify-center gap-8 sm:flex-row sm:gap-2"
+          >
+            <li>
+              <a
+                href="./menu.html"
+                class="inline-block bg-white font-cursive text-4xl uppercase text-brown sm:rounded-full sm:border-2 sm:border-light-grey sm:px-3 sm:py-1 sm:font-sans sm:text-sm"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="inline-block bg-white font-cursive text-4xl uppercase text-brown sm:rounded-full sm:border-2 sm:border-light-grey sm:px-3 sm:py-1 sm:font-sans sm:text-sm"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="inline-block bg-white font-cursive text-4xl uppercase text-brown sm:rounded-full sm:border-2 sm:border-light-grey sm:px-3 sm:py-1 sm:font-sans sm:text-sm"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          id="nav-button"
+          role="button"
+          aria-hidden="true"
+          class="inline-block rounded-full border-2 border-light-grey bg-white px-3 py-1 sm:hidden"
+        >
+          <div
+            id="nav-line-1"
+            class="my-[3px] h-[3px] w-5 transform rounded-full bg-orange transition-transform"
+          ></div>
+          <div
+            id="nav-line-2"
+            class="my-[3px] h-[3px] w-5 transform rounded-full bg-orange transition-transform"
+          ></div>
+          <span class="hidden">Open menu</span>
+        </button>
+      </div>
+    </header>
+    <div
+      id="nav-overlay"
+      class="fixed z-40 hidden h-full w-full bg-brown-75 sm:hidden"
+    ></div>
+    <!-- /HEADER -->
+
+    <!-- HERO -->
+    <section class="relative z-10 pt-28 md:pt-32">
+      <div class="mx-auto max-w-5xl px-4">
+        <div
+          class="relative -bottom-20 -mt-20 overflow-hidden rounded-2xl bg-orange p-4 sm:flex"
+        >
+          <div
+            class="mx-auto max-w-sm py-4 text-center sm:flex sm:max-w-none sm:flex-col sm:justify-between sm:py-0 sm:pr-12 sm:text-left"
+          >
+            <h1 class="mb-2 text-white">Some information about us</h1>
+            <p class="text-white-80">We should get to know each other</p>
+          </div>
+          <div class="mt-10 h-60 w-full sm:mt-0 sm:h-96">
+            <img
+              src="./assets/images/shop.jpg"
+              alt="Picture of the inside of our first shop"
+              class="h-full w-full rounded-md object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /HERO -->
+
+    <!-- SHOPS -->
+    <div
+      class="relative top-1 h-4 w-full bg-wave-pattern bg-bottom bg-repeat-x"
+    ></div>
+
+    <section class="relative bg-light-grey pb-20 pt-32 md:pt-40">
+      <div class="mx-auto max-w-5xl px-4">
+        <h2 class="mb-1 text-orange">Our shops</h2>
+
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-2xl bg-white p-4 sm:col-span-2 lg:col-span-1">
+            <img
+              src="./assets/images/news-becentral.jpg"
+              alt="The beCentral building"
+              class="w-full rounded-md"
+            />
+            <div class="mt-4">
+              <h3>BeCentral</h3>
+              <p class="my-2 text-brown">Kantersteen 12, 1000 Brussels</p>
+              <div class="mt-4 flex justify-between">
+                <div class="flex flex-col text-base text-brown">
+                  <span>Mon. – Fri.</span>
+                  <span>Sat.</span>
+                  <span>Sun.</span>
+                </div>
+                <div class="flex flex-col items-end text-base text-light-brown">
+                  <span>10:00 – 18:00</span>
+                  <span>10:00 – 20:00</span>
+                  <span>9:00 – 16:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-white p-4">
+            <img
+              src="./assets/images/news-becentral.jpg"
+              alt="The beCentral building"
+              class="w-full rounded-md"
+            />
+            <div class="mt-4">
+              <h3>BeCentral</h3>
+              <p class="my-2 text-brown">Kantersteen 12, 1000 Brussels</p>
+              <div class="mt-4 flex justify-between">
+                <div class="flex flex-col text-base text-brown">
+                  <span>Mon. – Fri.</span>
+                  <span>Sat.</span>
+                  <span>Sun.</span>
+                </div>
+                <div class="flex flex-col items-end text-base text-light-brown">
+                  <span>10:00 – 18:00</span>
+                  <span>10:00 – 20:00</span>
+                  <span>9:00 – 16:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-white p-4">
+            <img
+              src="./assets/images/news-becentral.jpg"
+              alt="The beCentral building"
+              class="w-full rounded-md"
+            />
+            <div class="mt-4">
+              <h3>BeCentral</h3>
+              <p class="my-2 text-brown">Kantersteen 12, 1000 Brussels</p>
+              <div class="mt-4 flex justify-between">
+                <div class="flex flex-col text-base text-brown">
+                  <span>Mon. – Fri.</span>
+                  <span>Sat.</span>
+                  <span>Sun.</span>
+                </div>
+                <div class="flex flex-col items-end text-base text-light-brown">
+                  <span>10:00 – 18:00</span>
+                  <span>10:00 – 20:00</span>
+                  <span>9:00 – 16:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="mt-16 h-96 w-full overflow-hidden rounded-xl border-4 border-white">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=18aFM2NAHemYxV-MkjyPWyE6V2Era88Y&ehbc=2E312F&noprof=1"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </div>
+        <!-- /MAP -->
+      </div>
+    </section>
+
+    <div
+      class="relative -top-1 z-0 h-4 w-full bg-wave-b-pattern bg-top bg-repeat-x"
+    ></div>
+    <!-- /SHOPS -->
+
+    <!-- FOOTER -->
+    <footer class="flex flex-col items-center p-16 text-center">
+      <img
+        src="./assets/images/logo-s.svg"
+        alt="King Donuts Logo"
+        class="mb-4 w-12"
+      />
+      <small class="text-sm text-light-brown"
+        >Copyright © 2023 King Donuts</small
+      >
+    </footer>
+    <!-- /FOOTER -->
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
