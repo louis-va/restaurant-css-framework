@@ -5,6 +5,7 @@ const root = resolve(__dirname, 'src')
 const outDir = resolve(__dirname, 'dist')
 
 export default {
+  base: '/restaurant-css-framework/',
   root,
   build: {
     outDir,
