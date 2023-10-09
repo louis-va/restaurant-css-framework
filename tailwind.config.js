@@ -18,6 +18,7 @@ export default {
       'brown': 'rgb(67, 50, 42)',
       'brown-15': 'rgba(67, 50, 42, .15)',
       'brown-25': 'rgba(67, 50, 42, .30)',
+      'brown-50': 'rgba(67, 50, 42, .50)',
       'light-brown': 'rgb(148, 134, 128)',
       'light-grey': 'rgb(243, 243, 243)',
     },
