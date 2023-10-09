@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King Donuts – Homepage</title>
+    <script type="module" crossorigin src="/assets/main-46560c91.js"></script>
+    <link rel="stylesheet" href="/assets/main-8904190d.css">
+  </head>
+  <body id="home" class="bg-stone-100">
+    <!-- HEADER -->
+    <header
+      class="fixed z-50 h-16 w-full border-b-2 border-light-grey bg-white"
+    >
+      <div class="mx-auto flex max-w-5xl items-center justify-between h-full px-6">
+        <a href="./" class="block w-20 sm:w-24">
+          <img src="/assets/logo-f0a7ea74.svg" alt="Donuts Lord logo" />
+        </a>
+        <nav id="nav" class="absolute hidden left-0 top-16 h-72 w-full bg-white sm:w-auto sm:top-0 sm:h-auto sm:relative sm:block">
+          <ul class="flex justify-center h-full items-center gap-8 flex-col sm:gap-2 sm:flex-row">
+            <li>
+              <a
+                href="./menu/"
+                class="inline-block font-cursive text-4xl sm:text-sm sm:font-sans sm:rounded-full sm:border-2 sm:border-light-grey bg-white sm:px-3 sm:py-1 uppercase text-brown"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about/"
+                class="inline-block font-cursive text-4xl sm:text-sm sm:font-sans sm:rounded-full sm:border-2 sm:border-light-grey bg-white sm:px-3 sm:py-1 uppercase text-brown"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact/"
+                class="inline-block font-cursive text-4xl sm:text-sm sm:font-sans sm:rounded-full sm:border-2 sm:border-light-grey bg-white sm:px-3 sm:py-1 uppercase text-brown"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button id="nav-button" role="button" aria-hidden="true" class="inline-block rounded-full border-2 border-light-grey bg-white px-3 py-1 sm:hidden">
+          <div id="nav-line-1" class="h-[3px] w-5 bg-orange rounded-full my-[3px] transition-transform transform"></div>
+          <div id="nav-line-2" class="h-[3px] w-5 bg-orange rounded-full my-[3px] transition-transform transform"></div>
+          <span class="hidden">Open menu</span>
+        </button>
+      </div>
+    </header>
+    <div id="nav-overlay" class="fixed hidden w-full h-full bg-brown-75 z-40 sm:hidden"></div>
+    <!-- /HEADER -->
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="mx-auto grid max-w-5xl gap-4 px-4 pt-28 md:grid-cols-2 md:pt-32"
+    >
+      <div
+        class="relative flex flex-col justify-between overflow-hidden rounded-2xl bg-orange p-4 md:row-span-2"
+      >
+        <h1 class="mb-44 text-white">
+          Brussel's <br />
+          roundest <br />
+          donuts
+        </h1>
+        <p class="text-white-80">Simply the best</p>
+        <img
+          src="/assets/hero-image-98a2aee4.png"
+          alt="Three tasty looking donuts"
+          class="absolute bottom-0 right-0 w-72 -mr-6 transform sm:w-96 animate-float"
+        />
+      </div>
+
+      <div class="relative overflow-hidden rounded-2xl bg-pink p-4">
+        <div class="relative z-10">
+          <h2 class="mb-1 text-white">Menu</h2>
+          <p class="mb-10 text-white-80">Check out our delicious treats</p>
+          <div class="flex flex-wrap gap-2">
+            <a href="./menu/" class="btn primary">Take a looook</a>
+          </div>
+        </div>
+        <div class="absolute left-1/2 top-1/2 z-0 w-full -translate-x-1/2 -translate-y-1/2 transform">
+          <img
+            src="/assets/swirl-afab6fb3.svg"
+            alt=""
+            aria-hidden="true"
+            class="w-full opacity-60 animate-spin"
+          />
+        </div>
+      </div>
+
+      <div class="relative overflow-hidden rounded-2xl bg-turquoise p-4">
+        <h2 class="mb-1 text-white">About us</h2>
+        <p class="mb-10 text-white-80">Get to know us better</p>
+        <div><a href="./contact/" class="btn secondary">Contact us</a></div>
+        <div class="mt-2">
+          <a href="./about/" class="btn secondary">The restaurant</a>
+        </div>
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAiYAAAGnCAMAAAC0FGyUAAAAaVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8G612AAAAI3RSTlMAYCDv34//b7+wEJ+AcFBAMH/PryaMDcwzc2azmZCmWU0aoMbeLjwAAA1lSURBVHgB7NZFgcQAAASwKc1Cj/17Pd5fwUCiIjkHAAAAAAAAAAAAAAAAAAAAAAAAAAAAwDDmBIxTOMM85QQsnXMMLu01h2Cc2lvgyH1uuwaOLP32FDhw6Y/n7IOxv14CxzH59ppdsPbPW/bAe/+N2QFjH7IDxrn/puyAtQ8f4YSYfLFzH8htw0AUhjcNA1kFcsOSVL//JYNUTLy2gGWm8r3vCi76R49LTjofon2oOOlQK0w+nHSInkPFSYeaYQIw6bzIHJRCBTDpvAr9V5hATDpZB/GjGCqASWfQUWh+mIBMOpPGLE60C28tPU1Uk9DcMEGZdA6qR/Ghp1BBTDpZiyzkCxMjLr1gi0kc6FOwVksv2CIK+cLEOC2+YItBupH5LQGYdM5aeCOWt1vGdvkFy4h1h4mxW3zBMmKdR+UVyqRz0V/O4sHbLWMPULCMWG+YGA8ABVuMQn1H5e+DKFjl/ucPE5xJZ9C/LuLFMKmeAArW+9UJb7eMiFGwjFhXmBgrgIJlxPqOytEmnawFI9Y/+BkbkIItkvgwTKotRsEyYv1PIsFMOhutuP85wsRICAXr2P8YJniTjv4rCjWOyhEnnUHfGIQ8YVIBFGwjYmkfWr4CFKw3YhkmxhNAwToilkflgJOOGmchR5hATDovajBijRQMrEnnqtYo5AgThElnVIv7nz0q7/BJluuoll6EHGECMOnoe45S0S70SQAF64hYhgncpJPUYsTao/IeDwAF641YhomBVrBFEjJH5biTTtTCH7G83bKewArWv/8xTIqIVrDc/+xRedsKrmCLKOQIk+IEVrD86sQfJsUGpGAZsfao3OETYMEWmWHisgMs2GLiUblLAizY4szbLZfPQAXLiDVhwkkn6j0jj8o9gAqW+58JE046Se+7CMOEk45Met+RTyJx0jEFaw0Mk25r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"
+          alt=""
+          aria-hidden="true"
+          class="absolute right-0 top-16 w-36 transform"
+        />
+      </div>
+    </section>
+    <!-- /HERO -->
+
+    <!-- SERVICE -->
+    <div
+      class="bg-wave-pattern relative top-1 h-20 w-full bg-bottom bg-repeat-x md:h-28"
+    ></div>
+
+    <section id="service" class="bg-light-grey pt-12 md:pt-20">
+      <div class="mx-auto max-w-5xl px-4">
+        <h2 class="mb-1 text-orange">
+          Good service, <br />
+          good donuts.
+        </h2>
+
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="flex items-center gap-4 rounded-2xl bg-white p-4">
+            <img
+              src="/assets/thumb-up-593930ae.svg"
+              alt=""
+              aria-hidden="true"
+              class="w-14 rounded-full bg-pink p-4"
+            />
+            <div>
+              <h3 class="mb-2 text-orange">100% Belgian</h3>
+              <p class="text-light-brown">
+                All of our donuts are sourced and cooked in belgium.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 rounded-2xl bg-white p-4">
+            <img
+              src="/assets/heart-a4ef0f50.svg"
+              alt=""
+              aria-hidden="true"
+              class="w-14 rounded-full bg-pink p-4"
+            />
+            <div>
+              <h3 class="mb-2 text-orange">Fresh ingredients</h3>
+              <p class="text-light-brown">
+                We bake our products twice a day so you always have fresh
+                donuts.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 rounded-2xl bg-white p-4">
+            <img
+              src="/assets/clock-c8db4fb8.svg"
+              alt=""
+              aria-hidden="true"
+              class="w-14 rounded-full bg-pink p-4"
+            />
+            <div>
+              <h3 class="mb-2 text-orange">Fast delivery</h3>
+              <p class="text-light-brown">
+                With our 3 shops in Brussels, we are never more than 20
+                minutes away from you.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 rounded-2xl bg-white p-4">
+            <img
+              src="/assets/medal-0f83aea1.svg"
+              alt=""
+              aria-hidden="true"
+              class="w-14 rounded-full bg-pink p-4"
+            />
+            <div>
+              <h3 class="mb-2 text-orange">Number 1</h3>
+              <p class="text-light-brown">
+                King Donut is the most popular donut restaurant in the world!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /SERVICE -->
+
+    <!-- EVENTS -->
+    <section id="events" class="relative z-10 bg-light-grey pt-16 md:pt-24">
+      <div class="mx-auto max-w-5xl px-4">
+        <div
+          class="relative -bottom-20 -mt-20 overflow-hidden rounded-2xl bg-orange p-4 text-center"
+        >
+          <div class="mx-auto my-4 max-w-xs">
+            <h2 class="mb-2 text-white">
+              Enjoy a sweet halloween
+            </h2>
+            <p class=" text-white-80">
+              Get special halloween-themed donuts from Oct. 20th to Nov. 10th
+            </p>
+          </div>
+          
+          <div class="mx-auto max-w-lg rounded-xl">
+            <img
+              src="/assets/halloween-4c232ea6.png"
+              alt=""
+              aria-hidden="true"
+              class="relative -bottom-20 -mt-10"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="bg-wave-b-pattern relative -top-1 z-0 h-20 w-full bg-top bg-repeat-x"
+    ></div>
+    <!-- /EVENTS -->
+
+    <!-- NEWS -->
+    <section id="news" class="pt-16 md:pt-24">
+      <div class="mx-auto max-w-5xl px-4">
+        <h2 class="text-orange">The king's news</h2>
+
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="rounded-2xl border-2 border-brown-15 p-4 sm:col-span-2 lg:col-span-1"
+          >
+            <img
+              src="/assets/news-becentral-e09dd671.jpg"
+              alt="The beCentral building"
+              class="w-full rounded-md"
+            />
+            <div>
+              <div
+                class="relative -top-4 -mb-8 inline-block rounded-full border-2 border-white bg-turquoise px-4 py-1 text-sm uppercase text-white"
+              >
+                Shop
+              </div>
+              <p class="mb-2 text-light-brown">Oct. 2nd 2023</p>
+              <p class="text-brown">
+                The king is opening a new shop in the technology hub beCentral.
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border-2 border-brown-15 p-4">
+            <img
+              src="/assets/news-lion-49e5e906.jpg"
+              alt="The beCentral building"
+              class="w-full rounded-md"
+            />
+            <div>
+              <div
+                class="relative -top-4 -mb-8 inline-block rounded-full border-2 border-white bg-pink px-4 py-1 text-sm uppercase text-white"
+              >
+                Product
+              </div>
+              <p class="mb-2 text-light-brown">Sept. 22nd 2023</p>
+              <p class="text-brown">
+                A new angry donut drops for all hungry animals!
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border-2 border-brown-15 p-4">
+            <img
+              src="/assets/news-donut-day-ae3b5c8a.jpg"
+              alt="The beCentral building"
+              class="w-full rounded-md"
+            />
+            <div>
+              <div
+                class="relative -top-4 -mb-8 inline-block rounded-full border-2 border-white bg-orange px-4 py-1 text-sm uppercase text-white"
+              >
+                Promo
+              </div>
+              <p class="mb-2 text-light-brown">Sept. 13th 2023</p>
+              <p class="text-brown">
+                Tomorrow is Donut's Day!! Come get your free donut in any King
+                Donut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /NEWS -->
+
+    <!-- FOOTER -->
+    <footer class="flex flex-col items-center p-16 text-center">
+      <img
+        src="/assets/logo-s-63c7742c.svg"
+        alt="King Donuts Logo"
+        class="mb-4 w-12"
+      />
+      <small class="text-sm text-light-brown"
+        >Copyright © 2023 King Donuts</small
+      >
+    </footer>
+    <!-- /FOOTER -->
+
+    
+  </body>
+</html>
