@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>King Donuts – Homepage</title>
-    <script type="module" crossorigin src="/restaurant-css-framework/assets/main-ab19473f.js"></script>
-    <link rel="stylesheet" href="/restaurant-css-framework/assets/main-276c398a.css">
+    <script type="module" crossorigin src="/restaurant-css-framework/assets/main-7bcbd14c.js"></script>
+    <link rel="stylesheet" href="/restaurant-css-framework/assets/main-718c7e59.css">
   </head>
   <body id="about" class="bg-stone-100">
     <!-- HEADER -->
@@ -107,16 +107,22 @@
         <h2 class="mb-1 text-orange">Our shops</h2>
 
         <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="rounded-2xl bg-white p-4 sm:col-span-2 lg:col-span-1">
+          <div
+            class="flex flex-col rounded-2xl bg-white p-4 sm:col-span-2 lg:col-span-1"
+          >
             <img
               src="/restaurant-css-framework/assets/news-becentral-e09dd671.jpg"
               alt="The beCentral building"
-              class="w-full rounded-md"
+              class="h-48 w-full rounded-md object-cover sm:h-80 lg:h-48"
             />
-            <div class="mt-4">
-              <h3>BeCentral</h3>
-              <p class="my-2 text-brown">Kantersteen 12, 1000 Brussels</p>
-              <div class="mt-4 flex justify-between">
+            <div class="mt-4 flex h-full flex-1 flex-col justify-between">
+              <div>
+                <h3>BeCentral</h3>
+                <p class="my-2 text-base text-brown">
+                  Kantersteen 12, 1000 Brussels
+                </p>
+              </div>
+              <div class="flex justify-between">
                 <div class="flex flex-col text-base text-brown">
                   <span>Mon. – Fri.</span>
                   <span>Sat.</span>
@@ -131,15 +137,17 @@
             </div>
           </div>
 
-          <div class="rounded-2xl bg-white p-4">
+          <div class="flex flex-col rounded-2xl bg-white p-4">
             <img
-              src="/restaurant-css-framework/assets/news-becentral-e09dd671.jpg"
-              alt="The beCentral building"
-              class="w-full rounded-md"
+              src="/restaurant-css-framework/assets/cinquantenaire-6fa65ab0.jpg"
+              alt="The Cinquantenaire parc"
+              class="h-48 w-full rounded-md object-cover"
             />
-            <div class="mt-4">
-              <h3>BeCentral</h3>
-              <p class="my-2 text-brown">Kantersteen 12, 1000 Brussels</p>
+            <div class="mt-4 flex h-full flex-1 flex-col justify-between">
+              <h3>Cinquantenaire</h3>
+              <p class="my-2 text-base text-brown">
+                Avenue de la renaissance, 1000 Brussels
+              </p>
               <div class="mt-4 flex justify-between">
                 <div class="flex flex-col text-base text-brown">
                   <span>Mon. – Fri.</span>
@@ -147,23 +155,25 @@
                   <span>Sun.</span>
                 </div>
                 <div class="flex flex-col items-end text-base text-light-brown">
-                  <span>10:00 – 18:00</span>
-                  <span>10:00 – 20:00</span>
-                  <span>9:00 – 16:00</span>
+                  <span>10:00 – 19:00</span>
+                  <span>10:00 – 22:00</span>
+                  <span>12:00 – 18:00</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="rounded-2xl bg-white p-4">
+          <div class="flex flex-col rounded-2xl bg-white p-4">
             <img
-              src="/restaurant-css-framework/assets/news-becentral-e09dd671.jpg"
-              alt="The beCentral building"
-              class="w-full rounded-md"
+              src="/restaurant-css-framework/assets/atomium-7d3588fb.jpg"
+              alt="The Atomium"
+              class="h-48 w-full rounded-md object-cover"
             />
-            <div class="mt-4">
-              <h3>BeCentral</h3>
-              <p class="my-2 text-brown">Kantersteen 12, 1000 Brussels</p>
+            <div class="mt-4 flex h-full flex-1 flex-col justify-between">
+              <h3>Atomium</h3>
+              <p class="my-2 text-base text-brown">
+                Place de l'Atomium 1, B-1020 Brussels
+              </p>
               <div class="mt-4 flex justify-between">
                 <div class="flex flex-col text-base text-brown">
                   <span>Mon. – Fri.</span>
@@ -172,8 +182,8 @@
                 </div>
                 <div class="flex flex-col items-end text-base text-light-brown">
                   <span>10:00 – 18:00</span>
-                  <span>10:00 – 20:00</span>
-                  <span>9:00 – 16:00</span>
+                  <span>8:00 – 20:00</span>
+                  <span>8:00 – 20:00</span>
                 </div>
               </div>
             </div>
@@ -182,12 +192,13 @@
 
         <!-- MAP -->
         <div
-          class="mt-16 h-96 w-full overflow-hidden rounded-xl border-4 border-white sm:h-[500px]"
+          class="relative mt-16 w-full overflow-hidden rounded-xl border-8 border-white"
         >
           <iframe
             src="https://www.google.com/maps/d/u/0/embed?mid=18aFM2NAHemYxV-MkjyPWyE6V2Era88Y&ehbc=2E312F&noprof=1"
             width="100%"
             height="100%"
+            class="relative -top-12 -mb-12 h-96 sm:h-[500px]"
           ></iframe>
         </div>
         <!-- /MAP -->
