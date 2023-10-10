@@ -1,5 +1,5 @@
 <!-- ABOUT THE PROJECT -->
-# Restaurant
+# King Donuts website
 
 A website for the fictional "King Donuts" restaurant
 
@@ -7,7 +7,7 @@ A website for the fictional "King Donuts" restaurant
 
 ## Description
 
-![screenshot](screenshot.jpg)
+![screenshot](screenshot.png)
 
 I worked on this website to learn how to use vite and tailwind css. I learned how to organize the strucutre of a multiple pages web app and how to configure the .config files to personalize the behaviour of the tools I used.
 
