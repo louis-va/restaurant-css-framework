@@ -15,6 +15,7 @@ export default {
         main: resolve(root, 'index.html'),
         menu: resolve(root, 'menu', 'index.html'),
         about: resolve(root, 'about', 'index.html'),
+        contact: resolve(root, 'contact', 'index.html'),
       }
     }
   }
