@@ -21,6 +21,7 @@ export default {
       'brown-75': 'rgba(67, 50, 42, .75)',
       'light-brown': 'rgb(148, 134, 128)',
       'light-grey': 'rgb(243, 243, 243)',
+      'grey': 'rgb(220, 220, 220)',
     },
     extend: {
       backgroundImage: {

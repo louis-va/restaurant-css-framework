@@ -38,6 +38,9 @@
   .btn.primary {
     @apply bg-white text-brown;
   }
+  .btn.orange {
+    @apply bg-orange text-white;
+  }
   .btn.secondary {
     @apply bg-brown-15 text-white;
   }
